@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        body {
+            padding-top: 5rem;
+        }
+
+        .starter-template {
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+
+        tfoot {
+    display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit;
+            font-weight: bold;
+}
+    </style>
+</head>
+
+
+<body>
+
+
+
+    <div class="container">
+        <div class="starter-template">
+            <div class="radio">
+                 <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="total" checked>
+    Total Only
+  </label>
+                <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="size">
+    Sizewise
+  </label>
+               
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="text-center" rowspan="2">UVC TCO#</th>
+                            <th class="text-center" rowspan="2">Size</th>
+                            <th class="text-center" rowspan="2">Qty.</th>
+                            <th class="text-center" rowspan="2">T. Qty</th>
+                            <th class="text-center mainLbl" colspan="2">Mainlable Qty.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Akshay</td>
+                            <td>Akshay</td>
+                            <td>Akshay</td>
+                            <td>Akshay</td>
+                            <td class="mainLbl input"><input type="text" class="form-control input-sm hidden" placeholder="Text input">
+</td>
+                        </tr>
+                        <tr>
+                            <td>Akshay</td>
+                            <td>Akshay</td>
+                            <td>Akshay</td>
+                            <td>Akshay</td>
+                            <td class="mainLbl input"><input type="text" class="form-control input-sm hidden" placeholder="Text input">
+</td>
+                        </tr>
+                        <tr>
+                            <td>Akshay</td>
+                            <td>Akshay</td>
+                            <td>Akshay</td>
+                            <td>Akshay</td>
+                            <td class="mainLbl input"><input type="text" class="form-control input-sm hidden" placeholder="Text input">
+</td>
+                        </tr>
+                        <tr>
+                            <td>Akshay</td>
+                            <td>Akshay</td>
+                            <td>Akshay</td>
+                            <td>Akshay</td>
+                            <td class="mainLbl input"><input type="text" class="form-control input-sm hidden" placeholder="Text input">
+</td>
+                        </tr>
+                        <tr>
+                            <td>Akshay</td>
+                            <td>Akshay</td>
+                            <td>Akshay</td>
+                            <td>Akshay</td>
+                            <td class="mainLbl input"><input type="text" class="form-control input-sm hidden" placeholder="Text input">
+</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td>akshy</td>
+                        <td>akshy</td>
+                        <td>akshy</td>
+                        <td>akshy</td>
+                        <td class="mainLbl"><span>Total Quantity</span><span><input type="text" class="form-control input-sm" placeholder="Text input"></span></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script>
+        (function() {
+            'use strict'
+
+            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                var msViewportStyle = document.createElement('style')
+                msViewportStyle.appendChild(
+                    document.createTextNode(
+                        '@-ms-viewport{width:auto!important}'
+                    )
+                )
+                document.head.appendChild(msViewportStyle)
+            }
+
+        }())
+        $(document).ready(function() { 
+              $("input[value='size']").click(function() {
+                  $('.mainLbl').show();
+                   $('.input input').removeClass('hidden');
+                  $('span input').addClass('hidden');
+                  
+              });
+              $("input[value='total']").click(function() {
+                  $('.input input').addClass('hidden');
+                  $('span input').removeClass('hidden');
+                  
+              });
+        });
+    </script>
+
+</body>
+
+</html>
